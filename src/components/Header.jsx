@@ -5,22 +5,28 @@ import { useState } from 'react';
 import { Menu, X, ChevronDown } from 'lucide-react';
 
 const navLinks = [
-  { name: 'Home', href: '#' },
-  { name: 'About Us', href: '#' },
-  { name: 'Services', href: '#' },
+  { name: 'Home', href: '/' },
+  { name: 'About Us', href: '/about-us' },
+  { name: 'Services', href: '/services' },
   {
     name: 'Our Projects',
     href: '#',
-    dropdown: [
-      { name: 'Web Development', href: '#' },
-      { name: 'App Development', href: '#' },
-      { name: 'UI/UX Design', href: '#' },
-    ],
+   dropdown: [
+  { name: 'NON Profit Organisations', href: '/non-profit-organisations' },
+  { name: 'E-Commerce Products', href: '/e-commerce-products' },
+  { name: 'Democratizing Finance', href: '/democratizing-finance' },
+  { name: 'Flow Of Healthcare', href: '/flow-of-healthcare' },
+  { name: 'Bringing Excellence', href: '/bringing-excellence' },
+  { name: 'Framing Social Space', href: '/framing-social-space' },
+  { name: 'Automating The Manual', href: '/automating-the-manual' },
+  { name: 'Project From', href: '/project-from' },
+  { name: 'Say Hello To Future', href: '/say-hello-to-future' },
+]
   },
-  { name: 'Omkkar Training', href: '#' },
-  { name: 'Omkkar Gurukul', href: '#' },
-  { name: 'Staffing', href: '#' },
-  { name: 'Contact Us', href: '#' },
+  { name: 'Omkkar Training', href: '/omkkar-training' },
+  { name: 'Omkkar Gurukul', href: '/omkkar-gurukul' },
+  { name: 'Staffing', href: '/staffing' },
+  { name: 'Contact Us', href: '/contact-us' },
 ];
 
 const Header = () => {

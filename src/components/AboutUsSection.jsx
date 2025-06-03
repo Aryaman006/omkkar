@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const AboutSection = () => {
   return (
-    <section className="relative bg-[#f8faff] py-16 px-4 md:px-20 overflow-hidden">
+    <section className="relative bg-[#f8faff] py-16 mt-20 px-4 md:px-20 overflow-hidden">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12 relative">
         {/* Left: Illustration with Rocket */}
         <div className="w-full md:w-1/2 flex justify-center relative">

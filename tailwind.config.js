@@ -12,9 +12,11 @@ module.exports = {
         geist: ['var(--font-geist-sans)', 'sans-serif'],
         geistMono: ['var(--font-geist-mono)', 'monospace'],
       },
-      
-       letterSpacing: {
+      letterSpacing: {
         extra: '1em',
+      },
+      colors: {
+        logo: '#4A148C',
       },
     },
   },

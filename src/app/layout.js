@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono, Roboto } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 
 const roboto = Roboto({
@@ -29,10 +30,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={roboto.variable}>
       <body
-        className="font-roboto"
+        className="font-roboto bg-gray-50"
       >
         <Header/>
         {children}
+        <Footer/>
       </body>
     </html>
   );
