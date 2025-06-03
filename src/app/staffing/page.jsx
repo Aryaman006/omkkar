@@ -7,11 +7,11 @@ const benefits = [
   },
   {
     title: "Timely talent recognition",
-    image: "/meeting.jpg",
+    image: "/meeting2.png",
   },
   {
     title: "Swift, hassle-free onboarding",
-    image: "/meeting.jpg",
+    image: "/meeting3.png",
   },
 ];
 

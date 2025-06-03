@@ -1,3 +1,5 @@
+'use client';
+
 import Image from "next/image";
 
 const data = [
@@ -41,40 +43,44 @@ const data = [
 
 const OmkkarGurukul = () => {
   return (
-    <section className="bg-[#f4f8fc] py-16">
-         <div className="bg-[#14153e] text-white py-40 flex justify-around text-center">
-        <div>
-          <h2 className="text-5xl font-semibold">Omkkar Gurukul</h2>
-          <p className="mt-8">Omkkar Innovations / Omkkar Gurukul</p>
-        </div>
+    <section className="bg-[#f4f8fc]">
+      {/* Hero */}
+      <div className="bg-[#14153e] mt-20 text-white py-40 px-4 text-center">
+        <h2 className="text-3xl md:text-5xl font-semibold">Omkkar Gurukul</h2>
+        <p className="mt-4 md:mt-8 text-sm md:text-base">Omkkar Innovations / Omkkar Gurukul</p>
       </div>
-      <div className="text-center m-20 max-w-4xl mx-auto mb-12">
-        <h2 className="text-3xl font-semibold mb-10 text-[#18144B]">
+
+      {/* Intro */}
+      <div className="text-center px-4 sm:px-8 md:px-12 lg:px-20 py-12 max-w-screen-xl mx-auto">
+        <h2 className="text-2xl md:text-3xl font-semibold text-[#18144B] mb-6">
           Welcome to Omkkar Gurukul: Unlocking Knowledge and Wisdom
         </h2>
-        <p className="mt-4 text-gray-700 text-sm md:text-md">
+        <p className="text-gray-700 text-sm md:text-base leading-relaxed">
           At Omkkar, we believe in the power of education to transform lives and empower individuals to reach their full potential. Our ancient Indian tradition of Gurukul system inspires us to create a holistic learning environment that nurtures students’ intellectual, physical, and spiritual growth.
         </p>
       </div>
 
-      <div className="grid grid-cols-1 px-4 md:px-8 lg:px-16  m-20 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      {/* Card Grid */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4 sm:px-8 md:px-12 lg:px-20 pb-16 max-w-screen-xl mx-auto">
         {data.map((item, index) => (
           <div
             key={index}
-            className="bg-white border rounded-xl p-5 shadow-md transition"
+            className="bg-white border rounded-xl shadow-md p-4 transition hover:shadow-lg"
           >
-            <div className="relative w-full h-72 mb-4 rounded-md overflow-hidden">
+            <div className="relative w-full h-64 mb-4 rounded-md overflow-hidden">
               <Image
                 src={item.image}
                 alt={item.title}
-                layout="fill"
-                objectFit="cover"
+                fill
+                className="object-cover"
               />
             </div>
-            <h3 className="text-xl font-semibold text-[#18144B] mb-2">
+            <h3 className="text-lg md:text-xl font-semibold text-[#18144B] mb-2">
               {item.title}
             </h3>
-            <p className="text-gray-700 text-sm leading-relaxed">{item.description}</p>
+            <p className="text-gray-700 text-sm md:text-base leading-relaxed">
+              {item.description}
+            </p>
           </div>
         ))}
       </div>
